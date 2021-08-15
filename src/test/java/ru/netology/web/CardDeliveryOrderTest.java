@@ -24,11 +24,6 @@ public class CardDeliveryOrderTest {
         $("[data-test-id=date] input").sendKeys(Keys.CONTROL, "a", Keys.DELETE);
     }
 
-    @AfterEach
-    public void tearDown() {
-        closeWebDriver();
-    }
-
     @Test
     public void shouldMeetingSuccessfullyBooked() {
         $("[data-test-id=city] input").setValue("Калининград");
